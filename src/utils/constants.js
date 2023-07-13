@@ -1,15 +1,18 @@
 export const navTabs = [
     {
         id: 1,
-        title: 'Cпециализация'
+        title: 'Cпециализация',
+        link: '#specialization'
     },
     {
         id: 2,
-        title: 'Образование'
+        title: 'Образование',
+        link: '#education'
     },
     {
         id: 3,
-        title: 'Контакты'
+        title: 'Контакты',
+        link: '#contacts'
     },
 ]
 
