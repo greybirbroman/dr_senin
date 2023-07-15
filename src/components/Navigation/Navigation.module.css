@@ -27,6 +27,7 @@
   transition: all 0.35s;
   padding: 10px 25px;
   width: 100%;
+  text-decoration: none;
 }
 
 .menuItem:hover {
@@ -41,6 +42,7 @@
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 1.4;
+  text-decoration: none;
 }
 
 .navItem:hover {
@@ -58,7 +60,7 @@
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .navList {
     display: none;
   }

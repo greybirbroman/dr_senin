@@ -27,13 +27,14 @@
 }
 
 .textContainer {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
   gap: 24px;
-  padding-left: 50px;
+  padding-left: 6rem;
+  cursor: default;
 }
 
 .imageContainer {
@@ -47,13 +48,14 @@
 .headText {
   font-weight: 700;
   font-size: 70px;
+  line-height: 115%;
 }
 
 .spanList {
   display: flex;
   align-items: start;
   gap: 35px;
-  font-size: 19px;
+  font-size: 26px;
   color: rgba(85, 85, 85, 1);
 }
 
@@ -65,6 +67,7 @@
   position: relative;
   width: 100%;
   height: 100%;
+  /* background-color: rgba(122, 156, 165, 1); */
 }
 
 .mainImage {
@@ -88,3 +91,29 @@
   left: -170px;
   margin: 136px 0 136px;
 }
+
+.motionContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 4;
+}
+
+@media (max-width: 2000px) {
+  
+    .imageContainer {
+      display: none;
+    }
+    .heroWrapper {
+        flex: 1;
+        background: url(../../images/bruno-rodrigues-279xIHymPYY-unsplash.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    .textContainer {
+      color: white;
+    }
+    .spanList {
+      color: white;
+    }
+  }
