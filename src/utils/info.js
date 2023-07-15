@@ -1,7 +1,11 @@
+import image1 from '../images/spec-image-1.jpg'
+import image2 from '../images/spec-image-2.jpg'
+
 export const info = [
   {
     id: 1,
     title: 'Специализация',
+    image: image2,
     content: [
       {
         text: 'Лечение кариеса зубов и его осложнений',
@@ -37,6 +41,7 @@ export const info = [
   {
     id: 2,
     title: 'Образование',
+    image: image2,
     content: [
       {
         year: '2006',

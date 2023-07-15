@@ -1,0 +1,8 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    color: #141414;
+    max-height: fit-content;
+    position: relative;
+}

@@ -1,9 +1,15 @@
-import styles from './ListItem.module.css'
+import styles from './ListItem.module.css';
+import tooth from '../../images/tooth.png';
+import Image from 'next/image'
 
-const ListItem = () => {
+const ListItem = ({ text, span, year }) => {
   return (
-    <li>
-      
+    <li className={styles.listItem}>
+      {year && <p className={styles.year}>{year}</p>}
+      <div className={styles.textContainer}>
+      {!year && <Image src={tooth} alt='Иконка, зуб' className={styles.icon}/>}
+      <p>{text} <span className={styles.span}>{span}</span></p>
+      </div>
     </li>
   )
 }
