@@ -1,29 +1,110 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 125px;
-    width: 100%;
-    padding: 2rem 6rem;
-    box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  cursor: default;
+  /* box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.4); */
 }
 
 .footerAuthor {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .authorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #111E22;
+  padding: 20px 0;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 200%;
+  width: 100%;
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #1e2c30;
+  padding: 70px 0 63px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.author {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: 0.8px;
+}
+
+.contactsSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  min-height: 500px;
+  background-color: #1e2c30;
+  padding: 0 360px;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 120px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.listItem {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.listItemRow {
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ padding-bottom: 15.5px;
+}
+
+.listTitle {
+    padding-bottom: 21px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 140%;
 }
 
 .spanIcons {
-    color: #7A9CA5;
+    color: #5C8692;
 }
 
-@media screen and (max-width: 1200px) {
-    .footer {
-      padding: 2rem 2rem;
+@media screen and (max-width: 1600px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
     }
+    .contactsSection {
+        padding: 0 180px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+  .list {
+    gap: 50px;
   }
+}
+
+@media screen and (max-width: 950px) {
+    
+  }
+

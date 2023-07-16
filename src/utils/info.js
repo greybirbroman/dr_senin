@@ -1,5 +1,7 @@
-import image1 from '../images/spec-image-1.jpg'
+
 import image2 from '../images/spec-image-2.jpg'
+import Mail from '../images/mail.svg'
+import Phone from '../images/phone-icon.svg';
 
 export const info = [
   {
@@ -75,3 +77,37 @@ export const info = [
     ],
   },
 ];
+
+export const testimonials = [
+  {
+    id: 1,
+    text: '" Очень люблю и уважаю доктора Сенина Кирилла Алексеевича. Профессионал , ничего не скажешь, творческий и думающий врач. "',
+    name: 'Елена Сарафанова',
+    city: 'Санкт-Петербург',
+  },
+  {
+    id: 2,
+    text: '" Доктор Сенин профессионал своего дела, все чётко и по делу, замечательный, Быстро и качественно все делает. Адекватные цены. Спасибо. "',
+    name: 'Inamallina',
+    city: 'Санкт-Петербург',
+  },
+  {
+    id: 3,
+    text: '" Спасибо Сенину Кириллу Алексеевичу, мастер своего дела! сделал два зуба ,дал рекомендации по остальным зубам, результатом доволен! "',
+    name: 'Павел Павелко',
+    city: 'Санкт-Петербург',
+  },
+]
+
+export const contacts = [
+  {
+    id: 1,
+    icon: Phone,
+    content: '+7 903 168 6387'
+  },
+  {
+    id: 2,
+    icon: Mail,
+    content: 'senkir@mail.ru'
+  },
+]

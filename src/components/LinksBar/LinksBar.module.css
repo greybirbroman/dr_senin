@@ -28,6 +28,12 @@
     height: 56px;
     background-size: contain;
 }
+.link_email_white {
+    background: url(../../images/gmail-white.svg) no-repeat;
+    width: 61px;
+    height: 56px;
+    background-size: contain;
+}
 
 .link_telegram {
     background: url(../../images/telegram_logo.png) no-repeat;
@@ -36,8 +42,21 @@
     background-size: contain;
 }
 
+.link_telegram_white {
+    background: url(../../images/telegram-white.svg) no-repeat;
+    height: 56px;
+    width: 61px;
+    background-size: contain;
+}
+
 .link_phone {
     background: url(../../images/phone-icon.png) no-repeat;
+    height: 56px;
+    width: 61px;
+    background-size: contain;
+}
+.link_phone_white {
+    background: url(../../images/phone-white.png) no-repeat;
     height: 56px;
     width: 61px;
     background-size: contain;
