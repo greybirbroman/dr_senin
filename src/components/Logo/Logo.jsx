@@ -1,12 +1,13 @@
 import styles from './Logo.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
-import LogoImage from '../../images/logo-no-background.png'
+import LogoColor from '../../images/logo-no-background.png'
+import LogoWhite from '../../images/logo-white.svg';
 
-const Logo = () => {
+const Logo = ({ white }) => {
   return (
     <Link href='/'>
-      <Image src={LogoImage} alt='лого, Сенин' className={styles.logoImage}/>
+      <Image src={white ? LogoWhite : LogoColor} alt='лого, Сенин' className={styles.logoImage}/>
     </Link>
   )
 }
