@@ -5,8 +5,11 @@ import MainImage from '../../images/bruno-rodrigues-279xIHymPYY-unsplash.jpg';
 import LinksBar from '../LinksBar/LinksBar';
 import { motion as m } from 'framer-motion';
 import { photoVariants } from '@/utils/motion';
+import useIsMobileResolution from '@/utils/hooks/useIsMobileResolition';
 
 const HeroSection = () => {
+  const isMobileResolution = useIsMobileResolution(992)
+  console.log(isMobileResolution)
   return (
     <section className={styles.sectionWrapper}>
       <div className={styles.heroWrapper}>
@@ -16,13 +19,12 @@ const HeroSection = () => {
             <li className={styles.spanItem}>Врач - Стоматолог</li>
             <li className={styles.spanItem}>Стаж с 2006 года</li>
           </ul>
-          <LinksBar />
+          <LinksBar white={isMobileResolution ? true : false}/>
         </div>
       </div>
       <div className={styles.imageContainer}>
         <div className={styles.imageBox}>
-          <div 
-          className={styles.overlayContainer}>
+          
             {/* Изображение будет другим, качественным */}
             <m.div
               variants={photoVariants}
@@ -39,7 +41,7 @@ const HeroSection = () => {
             </m.div>
           </div>
         </div>
-      </div>
+      
     </section>
   );
 };

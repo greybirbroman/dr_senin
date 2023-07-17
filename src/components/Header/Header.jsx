@@ -7,11 +7,11 @@ import Navigation from '../Navigation/Navigation'
 const Header = () => {
   return (
     <div className={styles.header}>
-     <div className={styles.phoneContainer}>
      <Logo />
+     {/* <div className={styles.phoneContainer}>
      <Image src={Phone} className={styles.phoneIcon} alt='Мобильный телефон'/>
         <p className={styles.phone}>+7 903 168 6387</p>
-     </div>
+     </div> */}
      <Navigation />
     </div>
   )
