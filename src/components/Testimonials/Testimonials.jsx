@@ -12,7 +12,7 @@ import useIsMobileResolution from '@/utils/hooks/useIsMobileResolition.js';
 const Testimonials = () => {
 const stars = Array(5).fill(null);
 const [visibleCount, setVisibleCount] = useState(1)
-const isMobileResolution = useIsMobileResolution()
+const isMobileResolution = useIsMobileResolution(992)
 const isNotShowAll = visibleCount < testimonials.length
 
 

@@ -94,3 +94,13 @@
    line-height: 160%;
 
 }
+
+@media (max-width: 992px) {
+
+    .section {
+        padding: 100px 20px;
+    }
+    .authorContainer {
+        padding: 25px 15px;
+    }
+}
