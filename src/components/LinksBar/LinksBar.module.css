@@ -1,0 +1,63 @@
+.linksList {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 10px;
+    height: fit-content;
+    list-style-type: none;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    transition: all 0.35s;
+}
+
+.link:hover {
+    transform: scale(1.1);
+    background-color: rgba(92, 134, 146, 1);
+}
+
+.link_email {
+    background: url(../../images/gmail_logo.png) no-repeat;
+    width: 61px;
+    height: 56px;
+    background-size: contain;
+}
+.link_email_white {
+    background: url(../../images/gmail-white.svg) no-repeat;
+    width: 61px;
+    height: 56px;
+    background-size: contain;
+}
+
+.link_telegram {
+    background: url(../../images/telegram_logo.png) no-repeat;
+    height: 56px;
+    width: 61px;
+    background-size: contain;
+}
+
+.link_telegram_white {
+    background: url(../../images/telegram-white.svg) no-repeat;
+    height: 56px;
+    width: 61px;
+    background-size: contain;
+}
+
+.link_phone {
+    background: url(../../images/phone-icon.png) no-repeat;
+    height: 56px;
+    width: 61px;
+    background-size: contain;
+}
+.link_phone_white {
+    background: url(../../images/phone-white.png) no-repeat;
+    height: 56px;
+    width: 61px;
+    background-size: contain;
+}
