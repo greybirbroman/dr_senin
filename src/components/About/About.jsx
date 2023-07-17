@@ -10,21 +10,27 @@ const About = () => {
       {info.map((section, index) => (
         <ul key={section.id} className={styles.list}>
           <div className={styles.titleContainer}>
-          <h3 className={styles.sectionTitle}>{section.title}</h3>
+            {/* <h3 className={styles.sectionTitle}>{section.title}</h3> */}
             {section.id === 1 && (
               <PrimaryLink href='#' title='записаться' />
             )}
           </div>
           <li className={styles.item}>
-            <Image
+            <div className={styles.titleTitle}>
+              <h3 className={styles.sectionTitle}>{section.title}</h3>
+            </div>
+            {/* <Image
               src={section.image}
               alt='Изображение, зубы, протезирование'
               className={styles.image}
               style={{
                 order: index === 1 ? 1 : -1,
               }}
-            />
-            <List section={section} />
+            /> */}
+            <div>
+              {/* <h3 className={styles.sectionTitle}>{section.title}</h3> */}
+              <List section={section} />
+            </div>
           </li>
         </ul>
       ))}
