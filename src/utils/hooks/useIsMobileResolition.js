@@ -1,11 +1,11 @@
 'use client'
 import { useState, useEffect } from 'react';
 
-const useIsMobileResolution = () => {
+const useIsMobileResolution = ( mobileResolution ) => {
   const [isMobile, setIsMobile] = useState(false);
 
   const checkIsMobile = () => {
-    setIsMobile(window.innerWidth <= 1200); // Здесь можно изменить ширину экрана, при которой считать разрешение мобильным
+    setIsMobile(window.innerWidth <= mobileResolution); // Здесь можно изменить ширину экрана, при которой считать разрешение мобильным
   };
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const useIsMobileResolution = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [mobileResolution]);
 
   return isMobile;
 };
