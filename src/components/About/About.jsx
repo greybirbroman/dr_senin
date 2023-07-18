@@ -6,7 +6,7 @@ import { info } from '../../utils/info';
 
 const About = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id='about'>
       {info.map((section, index) => (
         <ul key={section.id} className={styles.list}>
           <div className={styles.titleContainer}>

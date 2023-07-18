@@ -17,7 +17,7 @@ const ContactItem = ({ icon, content }) => {
 const NavigationItem = ({ href, title }) => {
   return (
     <div className={styles.listItemRow}>
-      <Link href={href}>{title}</Link>
+      <a href={href}>{title}</a>
     </div>
   );
 };
@@ -35,7 +35,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <div className={styles.footer}>
+    <footer id='footer' className={styles.footer}>
       <div className={styles.contactsSection}>
         <div className={styles.container}>
           <p className={styles.author}>Сенин Кирилл Алексeевич</p>
@@ -56,8 +56,8 @@ const Footer = () => {
           </li>
           <li className={styles.listItem}>
             <h4 className={styles.listTitle}>Навигация</h4>
-            <NavigationItem href='#' title='В начало' />
-            <NavigationItem href='#' title='Обо мне' />
+            <NavigationItem href='#home' title='В начало' />
+            <NavigationItem href='#about' title='Обо мне' />
           </li>
           <li className={styles.listItem}>
             <h4 className={styles.listTitle}>Рабочие часы</h4>
@@ -78,7 +78,7 @@ const Footer = () => {
           Icons by icon8
         </Link>
       </div>
-    </div>
+    </footer>
   );
 };
 

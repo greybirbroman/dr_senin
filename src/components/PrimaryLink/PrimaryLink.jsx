@@ -3,9 +3,9 @@ import Link from 'next/link';
 
 const PrimaryLink = ({ title, href, position }) => {
   return (
-    <Link href={href} className={styles.link} style={{position: position}}>
+    <a href={href} className={styles.link} style={{position: position }} replace>
       {title}
-    </Link>
+    </a>
   )
 }
 
