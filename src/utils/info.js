@@ -102,11 +102,13 @@ export const contacts = [
   {
     id: 1,
     icon: Phone,
+    add: 'tel:',
     content: '+7 903 168 6387'
   },
   {
     id: 2,
     icon: Mail,
+    add: 'mailto:',
     content: 'senkir@mail.ru'
   },
 ]

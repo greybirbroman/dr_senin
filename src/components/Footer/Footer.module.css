@@ -54,7 +54,8 @@
 .list {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: start;
+  justify-content: space-between;
   gap: 120px;
   padding-bottom: 50px;
   padding-top: 50px;
@@ -83,6 +84,13 @@
   color: #5c8692;
 }
 
+.navLink {
+  transition: all 0.35s;
+}
+
+.navLink:hover {
+  color: #5c8692
+}
 @media (max-width: 1400px) {
   .contactsSection {
     padding: 0 180px;
@@ -115,10 +123,13 @@
         padding: 0 20px;
     }
     .container {
-        padding: 50px 0;
+        padding: 50px 0 20px;
     }
 
     .listTitle {
         font-size: 18px;
+    }
+    .author {
+      font-size: 24px;
     }
 }

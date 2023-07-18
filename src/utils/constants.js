@@ -2,12 +2,12 @@ export const navTabs = [
     {
         id: 1,
         title: 'Cпециализация',
-        link: 'specialization'
+        link: '#specialization'
     },
     {
         id: 2,
         title: 'Образование',
-        link: 'education'
+        link: '#education'
     },
     {
         id: 3,
@@ -20,16 +20,13 @@ export const contacts = [
     {
         id: 1,
         title: 'Телефон',
+        add: 'tel:',
         content: '+7 903 168 6387'
     },
     {
         id: 2,
         title: 'E-mail',
+        add: 'mailto:',
         content: 'senkir@mail.ru'
-    },
-    {
-        id: 3,
-        title: 'Telegram',
-        content: 'link'
     },
 ]

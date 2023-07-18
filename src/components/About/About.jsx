@@ -13,7 +13,7 @@ const About = () => {
     <section className={styles.section} id='about'>
       <SectionTitle title='обо мне' />
       {info.map((section, index) => (
-        <ul key={section.id} className={styles.list}>
+        <ul key={section.id} className={styles.list} id={section.id === 1 ? 'specialization' : 'education'}>
           <m.h3
           variants={titleVarians}
           initial='hidden'
@@ -26,6 +26,8 @@ const About = () => {
                 <>
                 <Image
                   src={section.image}
+                  quality={100}
+                  sizes='(max-width: 1600px) 50vw, 33vw'
                   alt='Изображение, зубы, протезирование'
                   className={styles.image}
                 />

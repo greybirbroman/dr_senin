@@ -6,7 +6,6 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 130%;
-    letter-spacing: 1.1;
 }
 
 .icon {
@@ -27,7 +26,7 @@
 
 .span {
     color: #5C8692;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .year {
@@ -40,7 +39,6 @@
 @media (max-width: 500px) {
     .text {
         font-size: 18px;
-        line-height: 120%;
     }
     .year {
         font-size: 18px;
