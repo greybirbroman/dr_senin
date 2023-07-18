@@ -1,8 +1,8 @@
 import styles from './PrimaryButton.module.css'
 
-const PrimaryButton = ({ title, onClick }) => {
+const PrimaryButton = ({ title, area, onClick }) => {
   return (
-    <button type='button' className={styles.button} onClick={onClick}>
+    <button type='button' className={styles.button} onClick={onClick} role='button' id='al' area-aria-label={area}>
       {title}
     </button>
   )

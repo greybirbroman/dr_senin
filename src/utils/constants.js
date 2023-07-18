@@ -2,16 +2,19 @@ export const navTabs = [
     {
         id: 1,
         title: 'Cпециализация',
-        link: '#specialization'
+        link: '#specialization',
+        aria: 'Переход к секции "Специализация"'
     },
     {
         id: 2,
         title: 'Образование',
-        link: '#education'
+        link: '#education',
+        aria: 'Переход к секции "Образование"'
     },
     {
         id: 3,
         title: 'Контакты',
+        area: 'Переход к секции "Контакты"',
         link: '#footer'
     },
 ]
