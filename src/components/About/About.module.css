@@ -1,64 +1,116 @@
 .section {
-    padding: 100px 360px;
+    padding: 100px 100px;
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
+    /* gap: 100px; */
 }
 
 .sectionTitle {
-    color: #141414;
+    color: #1e2c30;
     font-weight: 700;
     text-align: center;
-    font-size: 68px;
+    font-size: 44px;
     line-height: 130%;
     width: fit-content;
     height: fit-content;
+    padding: 10px 20px;
+    margin: 50px 0;
+    background-color: rgba(85, 85, 85, 0.1);
+    border-radius: 15px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.sectionTitleColor {
+    background-color: #5C8692;
+    color: white;
 }
 
 .titleContainer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-bottom: 100px;
+    /* justify-content: space-between;
+    padding-bottom: 100px; */
+    justify-content: end;
+    padding: 34px 0;
 }
 
 .sectionContainer {
-   display: flex;
-   align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .list {
-  width: 100%;
+    width: 100%;
 }
 
 .item {
     display: grid;
+    /* grid-template-columns: 100px auto; */
     grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: 40% 60%; */
     gap: 54px;
     position: relative;
+    align-items: start;
 }
+
+.flex {
+    display: flex;
+}
+
+/* .background {
+    display: flex;
+} */
 
 
 .image {
-    width: 100%;
-    max-height: 859px;
+    max-width: 100%;
+    max-height: 850px;
+    /* height: calc(100vh - 30%); */
     object-fit: cover;
-    box-shadow: -10px 20px 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: -10px 10px 20px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
 }
 
-@media (max-width: 1000px) {
-    .section {
-        padding: 50px 180px;
-        gap: 50px;
+.freepik {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: rgba(85, 85, 85, 1);
+    font-size: 12px;
+}
+
+@media (max-width: 1200px) {
+    .image {
+        display: none;
+    }
+    .freepik {
+        display: none;
+    }
+    .item {
+        grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 992px) {
     .section {
-        padding: 20px 20px;
-        gap: 20px;
+        padding: 70px 70px;
     }
-    .item{
+}
+
+@media (max-width: 500px) {
+    .section {
+        padding: 50px 20px;
+    }
+
+    .sectionTitle {
+        margin: 30px auto;
+        font-weight: 500;
+        font-size: 32px;
+    }
+
+    .item {
         grid-template-columns: 1fr;
     }
 }

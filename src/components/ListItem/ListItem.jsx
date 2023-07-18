@@ -8,7 +8,7 @@ const ListItem = ({ text, span, year }) => {
       {year && <p className={styles.year}>{year}</p>}
       <div className={styles.textContainer}>
       {!year && <Image src={tooth} alt='Иконка, зуб' className={styles.icon}/>}
-      <p>{text} <span className={styles.span}>{span}</span></p>
+      <p className={styles.text}>{text} <span className={styles.span}>{span}</span></p>
       </div>
     </li>
   )

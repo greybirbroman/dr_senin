@@ -5,18 +5,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 147px 20px;
+    padding: 100px 20px;
     cursor: default;
-}
-
-.testimonials {
-    text-transform: uppercase;
-    color: #5C8692;
-    line-height: 155%;
-    font-weight: 400;
-    font-size: 15px;
-    text-align: center;
-    letter-spacing: 1.5px;
 }
 
 .title {
@@ -98,9 +88,21 @@
 @media (max-width: 992px) {
 
     .section {
-        padding: 100px 20px;
+        padding: 70px 20px;
     }
     .authorContainer {
-        padding: 25px 15px;
+        padding: 15px 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .section {
+        padding: 50px 20px;
+    }
+    .text {
+        font-size: 18px;
+    }
+    .name {
+        font-size: 14px;
     }
 }

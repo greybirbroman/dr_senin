@@ -1,7 +1,7 @@
 import styles from './Logo.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
-import LogoColor from '../../images/senin-high-resolution-logo-black-on-transparent-background.svg'
+import LogoColor from '../../images/logo-no-background.svg'
 import LogoWhite from '../../images/logo-white.svg';
 
 const Logo = ({ white }) => {

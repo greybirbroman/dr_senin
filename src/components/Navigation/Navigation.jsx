@@ -11,9 +11,9 @@ const MenuList = ({ onClick }) => {
     <ul className={styles.menuList}>
       {navTabs.map((tab) => (
         <li key={tab.id} className={styles.menuItem}>
-          <Link href={tab.link} onClick={onClick}>
+          <a href={tab.link} onClick={onClick}>
             {tab.title}
-          </Link>
+          </a>
         </li>
       ))}
     </ul>
@@ -65,9 +65,9 @@ const Navigation = () => {
                 position='relative'
               />
             ) : (
-              <Link href={tab.link} className={styles.navItem}>
+              <a href={tab.link} className={styles.navItem}>
                 {tab.title}
-              </Link>
+              </a>
             )}
           </li>
         ))}

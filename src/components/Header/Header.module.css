@@ -4,6 +4,10 @@
   align-items: center;
   height: 125px;
   padding: 2rem 6rem;
+  width: 100%;
+  z-index: 100;
+  position: absolute;
+  background-color: white;
   /* box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4); */
 }
 
@@ -28,15 +32,16 @@
   line-height: 125%;
 }
 
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
   .header {
     padding: 2rem 2rem;
     height: 100px;
+    background-color: transparent;
   }
 }
 
-/* @media (max-width: 992px) { 
-  .phoneContainer {
-    display: none;
+@media (max-width: 500px) {
+  .header {
+    padding: 0 20px;
   }
-} */
+}
