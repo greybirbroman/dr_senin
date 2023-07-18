@@ -74,7 +74,7 @@
 
 .imageBox {
   position: absolute;
- 
+
   width: 100%;
   height: 100%;
   top: 50%;
@@ -97,19 +97,21 @@
   .imageContainer {
     display: none;
   }
+
   .heroWrapper {
     flex: 1;
-    background: url(../../images/bruno-rodrigues-279xIHymPYY-unsplash.jpg)
-      no-repeat;
+    background: url(../../images/bruno-rodrigues-279xIHymPYY-unsplash.jpg) no-repeat;
     background-size: cover;
   }
+
   .headText {
     font-size: 44px;
-   }
+  }
 
   .textContainer {
     color: white;
   }
+
   .spanList {
     color: white;
     gap: 20px;
