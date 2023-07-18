@@ -8,10 +8,6 @@ const Header = () => {
   return (
     <div id='home' className={styles.header}>
      <Logo />
-     {/* <div className={styles.phoneContainer}>
-     <Image src={Phone} className={styles.phoneIcon} alt='Мобильный телефон'/>
-        <p className={styles.phone}>+7 903 168 6387</p>
-     </div> */}
      <Navigation />
     </div>
   )

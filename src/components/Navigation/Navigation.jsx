@@ -5,12 +5,11 @@ import { navTabs } from '@/utils/constants';
 import PrimaryLink from '../PrimaryLink/PrimaryLink';
 
 const MenuList = ({ onClick }) => {
-
   return (
     <ul className={styles.menuList}>
       {navTabs.map((tab) => (
         <li key={tab.id} className={styles.menuItem}>
-          <a href={tab.link} onClick={onClick}>
+          <a href={tab.link} area-aria-label={tab.area} onClick={onClick}>
             {tab.title}
           </a>
         </li>
@@ -20,7 +19,16 @@ const MenuList = ({ onClick }) => {
 };
 
 const BurgerButton = ({ onClick }) => {
-  return <button className={styles.burgerButton} onClick={onClick} />;
+  return (
+    <button
+      className={styles.burgerButton}
+      onClick={onClick}
+      type='button'
+      id='al'
+      aria-label='Иконка, меню, бургер'
+      role='button'
+    />
+  );
 };
 
 const Navigation = () => {
@@ -52,7 +60,11 @@ const Navigation = () => {
   return (
     <nav className={styles.nav}>
       <BurgerButton onClick={toggleMenu} />
-      {isMenuVisible && <div ref={menuRef}><MenuList onClick={toggleMenu}/></div>}
+      {isMenuVisible && (
+        <div ref={menuRef}>
+          <MenuList onClick={toggleMenu} />
+        </div>
+      )}
       <ul className={styles.navList}>
         {navTabs.map((tab) => (
           <li key={tab.id}>
