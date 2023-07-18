@@ -21,6 +21,10 @@
     gap: 10px;
 }
 
+.text {
+    color: rgba(85, 85, 85, 1);
+}
+
 .span {
     color: #5C8692;
     font-weight: 700;
@@ -31,4 +35,14 @@
     background-color: #5C8692;
     padding: 8px 16px;
     border-radius: 8px;
+}
+
+@media (max-width: 500px) {
+    .text {
+        font-size: 18px;
+        line-height: 120%;
+    }
+    .year {
+        font-size: 18px;
+    }
 }

@@ -2,6 +2,8 @@
 import styles from './Testimonials.module.css';
 import { useState, useEffect } from 'react';
 import { testimonials } from '@/utils/info';
+import { motion as m } from 'framer-motion';
+import { listVariants } from '@/utils/motion';
 import Image from 'next/image';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import PrimaryButton from '../PrimaryButton/PrimaryButton';
@@ -32,13 +34,19 @@ useEffect(() => {
     }
   }, [isMobileResolution]);
 
+
   return (
     <section className={styles.section}>
         <SectionTitle title='отзывы'/>
         {/* <h2 className={styles.title}>Что говорят пациенты</h2> */}
       <ul className={styles.list}>
-        {testimonials.slice(0, visibleCount).map((item) => (
-          <li key={item.id} className={styles.listItem}>
+        {testimonials.slice(0, visibleCount).map((item, index) => (
+          <m.li
+          variants={listVariants}
+          initial='hidden'
+          animate='visible'
+          custom={index}
+          key={item.id} className={styles.listItem}>
             <div className={styles.textContainer}>
               <p className={styles.text}>{item.text}</p>
             </div>
@@ -57,7 +65,7 @@ useEffect(() => {
                 <Image src={Quote} alt='Изображение, ковычки, цитата' />
               </div>
             </div>
-          </li>
+          </m.li>
         ))}
       </ul>
       {isMobileResolution && (

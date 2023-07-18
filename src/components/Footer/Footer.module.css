@@ -8,19 +8,15 @@
   /* box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.4); */
 }
 
-.footerAuthor {
-  font-size: 18px;
-}
-
 .authorContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   background-color: #111e22;
-  padding: 20px 0;
+  padding: 20px 20px;
   color: white;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 200%;
   width: 100%;
@@ -37,7 +33,7 @@
 }
 
 .author {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 125%;
   letter-spacing: 0.8px;
@@ -88,9 +84,9 @@
 }
 
 @media (max-width: 1400px) {
-    .contactsSection {
-        padding: 0 180px;
-      }
+  .contactsSection {
+    padding: 0 180px;
+  }
 }
 @media (max-width: 1200px) {
   .container {
@@ -100,17 +96,29 @@
   .contactsSection {
     padding: 0 100px;
   }
- 
 }
 
 @media (max-width: 992px) {
-    .contactsSection {
-        padding: 0 40px;
-      }
+  .contactsSection {
+    padding: 0 40px;
+  }
   .list {
     gap: 50px;
   }
 }
 
-@media screen and (max-width: 950px) {
+@media (max-width: 500px) {
+    .authorContainer {
+        line-height: 100%;
+    }
+    .contactsSection {
+        padding: 0 20px;
+    }
+    .container {
+        padding: 50px 0;
+    }
+
+    .listTitle {
+        font-size: 18px;
+    }
 }

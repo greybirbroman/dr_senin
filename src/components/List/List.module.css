@@ -6,3 +6,9 @@
     max-height: fit-content;
     position: relative;
 }
+
+@media (max-width: 500px) {
+    .list {
+        gap: 17px;
+    }
+}

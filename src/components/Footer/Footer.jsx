@@ -77,6 +77,7 @@ const Footer = () => {
         >
           Icons by icon8
         </Link>
+        
       </div>
     </footer>
   );
