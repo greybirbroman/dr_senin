@@ -2,7 +2,6 @@
 import { useState, useRef, useEffect } from 'react';
 import styles from './Navigation.module.css';
 import { navTabs } from '@/utils/constants';
-import Link from 'next/link';
 import PrimaryLink from '../PrimaryLink/PrimaryLink';
 
 const MenuList = ({ onClick }) => {
@@ -27,7 +26,6 @@ const BurgerButton = ({ onClick }) => {
 const Navigation = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const menuRef = useRef(null);
-  console.log(menuRef)
 
   const toggleMenu = () => {
     if (isMenuVisible) {
