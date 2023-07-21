@@ -1,7 +1,5 @@
 
 import SpecializationImage from '../images/specialization-image.jpg'
-import Mail from '../images/mail.svg'
-import Phone from '../images/phone-icon.svg';
 
 export const info = [
   {
@@ -95,20 +93,5 @@ export const testimonials = [
     text: '" Спасибо Сенину Кириллу Алексеевичу, мастер своего дела! Сделал два зуба, дал рекомендации по остальным зубам, результатом доволен! "',
     name: 'Павел Павелко',
     city: 'Санкт-Петербург',
-  },
-]
-
-export const contacts = [
-  {
-    id: 1,
-    icon: Phone,
-    add: 'tel:',
-    content: '+7 903 168 6387'
-  },
-  {
-    id: 2,
-    icon: Mail,
-    add: 'mailto:',
-    content: 'senkir@mail.ru'
   },
 ]

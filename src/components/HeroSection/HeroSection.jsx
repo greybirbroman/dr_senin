@@ -19,6 +19,7 @@ const HeroSection = () => {
             </h1>
             <ul className={styles.spanList}>
               <li className={styles.spanItem}>Врач - Стоматолог</li>
+              <li>&#8226;</li>
               <li className={styles.spanItem}>Стаж с 2006 года</li>
             </ul>
             <LinksBar white={isMobileResolution ? true : false} />

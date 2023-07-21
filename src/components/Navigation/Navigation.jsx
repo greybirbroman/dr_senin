@@ -36,16 +36,12 @@ const Navigation = () => {
   const menuRef = useRef(null);
 
   const toggleMenu = () => {
-    if (isMenuVisible) {
-      setIsMenuVisible(false);
-    } else {
-      setIsMenuVisible(true);
-    }
+    setIsMenuVisible((prevState) => !prevState)
   };
 
   const handleClickOutsideMenu = (event) => {
     if (menuRef.current && !menuRef.current.contains(event.target)) {
-      setIsMenuVisible(false);
+      setIsMenuVisible((prevState) => !prevState);
     }
   };
 

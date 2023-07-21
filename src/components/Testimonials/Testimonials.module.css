@@ -109,3 +109,9 @@
         font-size: 14px;
     }
 }
+
+@media (max-width: 350px) {
+ .authorContainer {
+    display: none;
+ }
+}

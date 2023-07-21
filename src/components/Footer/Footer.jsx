@@ -1,15 +1,13 @@
 import styles from './Footer.module.css';
-import Logo from '../Logo/Logo';
 import LinksBar from '../LinksBar/LinksBar';
 import Link from 'next/link';
 import Image from 'next/image';
-import PrimaryLink from '../PrimaryLink/PrimaryLink';
-import { contacts } from '@/utils/info';
+import { contacts } from '@/utils/constants';
 
 const ContactItem = ({ icon, content, href }) => {
   return (
     <li className={styles.listItemRow}>
-      <Image className={styles.contact} src={icon} alt='Икон' />
+      <Image className={styles.contact} src={icon} alt='Иконка' />
       <a className={styles.navLink} href={href} target='_blank'>{content}</a>
     </li>
   );
@@ -22,14 +20,14 @@ const NavigationItem = ({ href, title }) => {
     </div>
   );
 };
-const WorkingHoursItem = ({ day, hours }) => {
-  return (
-    <div className={styles.listItemRow}>
-      <p>{day}:</p>
-      <span>{hours}</span>
-    </div>
-  );
-};
+// const WorkingHoursItem = ({ day, hours }) => {
+//   return (
+//     <div className={styles.listItemRow}>
+//       <p>{day}:</p>
+//       <span>{hours}</span>
+//     </div>
+//   );
+// };
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -55,11 +53,11 @@ const Footer = () => {
               ))}
             </ul>
           </li>
-          <li className={styles.listItem}>
+          {/* <li className={styles.listItem}>
             <h4 className={styles.listTitle}>Рабочие часы</h4>
             <WorkingHoursItem day='Пт' hours='15:00 - 21:00' />
             <WorkingHoursItem day='Cб' hours='10:00 - 21:00' />
-          </li>
+          </li> */}
           <li className={styles.listItem}>
             <h4 className={styles.listTitle}>Навигация</h4>
             <NavigationItem href='#home' title='В начало' />
