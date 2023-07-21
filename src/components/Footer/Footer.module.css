@@ -121,6 +121,7 @@
     }
     .contactsSection {
         padding: 0 20px;
+        min-height: 0;
     }
     .container {
         padding: 50px 0 20px;
@@ -132,4 +133,10 @@
     .author {
       font-size: 24px;
     }
+}
+
+@media (max-width: 335px) {
+.authorContainer {
+  flex-direction: column;
+}
 }
