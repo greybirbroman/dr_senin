@@ -7,8 +7,8 @@ import { listVariants } from '@/utils/motion';
 import Image from 'next/image';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import PrimaryButton from '../PrimaryButton/PrimaryButton';
-import Quote from '../../images/quote.svg';
-import Star from '../../images/star.svg';
+import Quote from '../../../public/images/quote.svg';
+import Star from '../../../public/images/star.svg';
 import useIsMobileResolution from '@/utils/hooks/useIsMobileResolition.js';
 
 const Testimonials = () => {
