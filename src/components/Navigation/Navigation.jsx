@@ -8,8 +8,8 @@ const MenuList = ({ onClick }) => {
   return (
     <ul className={styles.menuList}>
       {navTabs.map((tab) => (
-        <li key={tab.id} className={styles.menuItem}>
-          <a href={tab.link} area-aria-label={tab.area} onClick={onClick}>
+        <li key={tab.id} className={styles.menuItem} onClick={onClick}>
+          <a href={tab.link} area-aria-label={tab.area}>
             {tab.title}
           </a>
         </li>
@@ -19,6 +19,7 @@ const MenuList = ({ onClick }) => {
 };
 
 const BurgerButton = ({ onClick }) => {
+  
   return (
     <button
       className={styles.burgerButton}
@@ -40,8 +41,11 @@ const Navigation = () => {
   };
 
   const handleClickOutsideMenu = (event) => {
-    if (menuRef.current && !menuRef.current.contains(event.target)) {
-      setIsMenuVisible((prevState) => !prevState);
+    if (
+      menuRef.current &&
+      !menuRef.current.contains(event.target)
+    ) {
+      setIsMenuVisible(false);
     }
   };
 
@@ -54,12 +58,10 @@ const Navigation = () => {
   }, []);
 
   return (
-    <nav className={styles.nav}>
-      <BurgerButton onClick={toggleMenu} />
+    <nav className={styles.nav} ref={menuRef}>
+      <BurgerButton onClick={toggleMenu}/>
       {isMenuVisible && (
-        <div ref={menuRef}>
-          <MenuList onClick={toggleMenu} />
-        </div>
+          <MenuList onClick={toggleMenu}/>
       )}
       <ul className={styles.navList}>
         {navTabs.map((tab) => (
