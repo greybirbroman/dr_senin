@@ -1,7 +1,7 @@
 'use client';
 import styles from './HeroSection.module.css';
 import Image from 'next/image';
-import MainImage from '../../images/senin-main.jpeg';
+import MainImage from '../../../public/images/senin-main.jpeg'
 import LinksBar from '../LinksBar/LinksBar';
 import { motion as m } from 'framer-motion';
 import { photoVariants } from '@/utils/motion';
