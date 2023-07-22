@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
         <ul className={styles.list}>
           <li className={styles.listItem}>
-            <h4 className={styles.listTitle}>Контакты</h4>
+            <h3 className={styles.listTitle}>Контакты</h3>
             <ul className={styles.linksList}>
               {contacts.map((contact) => (
                 <ContactItem
@@ -49,7 +49,7 @@ const Footer = () => {
             </ul>
           </li>
             <li className={styles.listItem}>
-              <h4 className={styles.listTitle}>Навигация</h4>
+              <h3 className={styles.listTitle}>Навигация</h3>
               <ul className={styles.linksList}>
                 {footerLinks.map((link) => (
                   <NavigationItem
