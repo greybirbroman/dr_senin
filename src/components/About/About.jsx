@@ -16,7 +16,7 @@ const About = () => {
       <SectionTitle title='обо мне' />
       {info.map((section) => (
        <React.Fragment key={section.id}>
-          <m.h3
+          <m.h2
             variants={titleVarians}
             initial='hidden'
             whileInView='show'
@@ -26,7 +26,7 @@ const About = () => {
             }`}
           >
             {section.title}
-          </m.h3>
+          </m.h2>
           <ul
             className={styles.list}
           >
