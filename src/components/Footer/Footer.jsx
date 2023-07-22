@@ -2,32 +2,27 @@ import styles from './Footer.module.css';
 import LinksBar from '../LinksBar/LinksBar';
 import Link from 'next/link';
 import Image from 'next/image';
-import { contacts } from '@/utils/constants';
+import PrimaryLink from '../PrimaryLink/PrimaryLink';
+import { contacts, footerLinks } from '@/utils/constants';
 
 const ContactItem = ({ icon, content, href }) => {
   return (
     <li className={styles.listItemRow}>
-      <Image className={styles.contact} src={icon} alt='Иконка' />
-      <a className={styles.navLink} href={href} target='_blank'>{content}</a>
+      <Link className={styles.navLink} href={href} target='_blank'>
+        <Image className={styles.contact} src={icon} alt='Иконка' />
+        {content}
+      </Link>
     </li>
   );
 };
 
 const NavigationItem = ({ href, title }) => {
   return (
-    <div className={styles.listItemRow}>
-      <a className={styles.navLink} href={href}>{title}</a>
-    </div>
+    <li className={styles.listItemRow}>
+      <PrimaryLink customClass={styles.navLink} href={href} title={title} />
+    </li>
   );
 };
-// const WorkingHoursItem = ({ day, hours }) => {
-//   return (
-//     <div className={styles.listItemRow}>
-//       <p>{day}:</p>
-//       <span>{hours}</span>
-//     </div>
-//   );
-// };
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -42,7 +37,7 @@ const Footer = () => {
         <ul className={styles.list}>
           <li className={styles.listItem}>
             <h4 className={styles.listTitle}>Контакты</h4>
-            <ul>
+            <ul className={styles.linksList}>
               {contacts.map((contact) => (
                 <ContactItem
                   key={contact.id}
@@ -53,20 +48,22 @@ const Footer = () => {
               ))}
             </ul>
           </li>
-          {/* <li className={styles.listItem}>
-            <h4 className={styles.listTitle}>Рабочие часы</h4>
-            <WorkingHoursItem day='Пт' hours='15:00 - 21:00' />
-            <WorkingHoursItem day='Cб' hours='10:00 - 21:00' />
-          </li> */}
-          <li className={styles.listItem}>
-            <h4 className={styles.listTitle}>Навигация</h4>
-            <NavigationItem href='#home' title='В начало' />
-            <NavigationItem href='#about' title='Обо мне' />
-          </li>
+            <li className={styles.listItem}>
+              <h4 className={styles.listTitle}>Навигация</h4>
+              <ul className={styles.linksList}>
+                {footerLinks.map((link) => (
+                  <NavigationItem
+                    key={link.id}
+                    href={link.href}
+                    title={link.title}
+                  />
+                ))}
+              </ul>
+            </li>
         </ul>
       </div>
       <div className={styles.authorContainer}>
-        <p>&#169;{' '}Copyright{' '}{year}.</p>
+        <span>&#169; Copyright {year}.</span>
         <p className={styles.footerAuthor}>Сенин К.A.</p>
         <Link
           target='_blank'
@@ -76,7 +73,6 @@ const Footer = () => {
         >
           Icons by icon8
         </Link>
-        
       </div>
     </footer>
   );

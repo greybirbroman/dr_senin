@@ -1,12 +1,27 @@
+'use client'
 import styles from './PrimaryLink.module.css';
-import Link from 'next/link';
+import preventHashLink from '@/utils/functions';
 
-const PrimaryLink = ({ title, href, position }) => {
+const PrimaryLink = ({ customClass, title, href, position }) => {
+
+  const handleClick = (event) => {
+    event.preventDefault();
+    preventHashLink(href);
+  };
+
+  const combinedClassName = customClass ? customClass : styles.link;
+
+
   return (
-    <a href={href} className={styles.link} style={{position: position }}>
+    <a
+      href={href}
+      className={combinedClassName}
+      style={{ position: position }}
+      onClick={handleClick}
+    >
       {title}
     </a>
-  )
-}
+  );
+};
 
-export default PrimaryLink
+export default PrimaryLink;

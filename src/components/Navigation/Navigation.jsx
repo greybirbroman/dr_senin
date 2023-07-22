@@ -1,17 +1,18 @@
 'use client';
-import { useState, useRef, useEffect } from 'react';
 import styles from './Navigation.module.css';
+import { useState, useRef, useEffect } from 'react';
 import { navTabs } from '@/utils/constants';
+import preventHashLink from '@/utils/functions';
 import PrimaryLink from '../PrimaryLink/PrimaryLink';
 
 const MenuList = ({ onClick }) => {
   return (
     <ul className={styles.menuList}>
       {navTabs.map((tab) => (
-        <li key={tab.id} className={styles.menuItem} onClick={onClick}>
-          <a href={tab.link} area-aria-label={tab.area}>
+        <li key={tab.id} onClick={onClick} className={styles.menuItem}>
+          <PrimaryLink href={tab.link} title={tab.title} customClass={styles.menuLink}>
             {tab.title}
-          </a>
+          </PrimaryLink>
         </li>
       ))}
     </ul>
@@ -19,13 +20,12 @@ const MenuList = ({ onClick }) => {
 };
 
 const BurgerButton = ({ onClick }) => {
-  
   return (
     <button
       className={styles.burgerButton}
       onClick={onClick}
       type='button'
-      id='al'
+      id='burger'
       aria-label='Иконка, меню, бургер'
       role='button'
     />
@@ -37,14 +37,11 @@ const Navigation = () => {
   const menuRef = useRef(null);
 
   const toggleMenu = () => {
-    setIsMenuVisible((prevState) => !prevState)
+    setIsMenuVisible((prevState) => !prevState);
   };
 
   const handleClickOutsideMenu = (event) => {
-    if (
-      menuRef.current &&
-      !menuRef.current.contains(event.target)
-    ) {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
       setIsMenuVisible(false);
     }
   };
@@ -59,24 +56,17 @@ const Navigation = () => {
 
   return (
     <nav className={styles.nav} ref={menuRef}>
-      <BurgerButton onClick={toggleMenu}/>
-      {isMenuVisible && (
-          <MenuList onClick={toggleMenu}/>
-      )}
+      <BurgerButton onClick={toggleMenu} />
+      {isMenuVisible && <MenuList onClick={toggleMenu} />}
       <ul className={styles.navList}>
         {navTabs.map((tab) => (
           <li key={tab.id}>
-            {tab.id === 3 ? (
               <PrimaryLink
                 href={tab.link}
                 title={tab.title}
                 position='relative'
+                customClass={tab.id !== 3 && styles.navItem}
               />
-            ) : (
-              <a href={tab.link} className={styles.navItem}>
-                {tab.title}
-              </a>
-            )}
           </li>
         ))}
       </ul>
