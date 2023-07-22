@@ -69,7 +69,7 @@ useEffect(() => {
         ))}
       </ul>
       {isMobileResolution && (
-        <PrimaryButton title={isNotShowAll ? 'Показать все' : 'Свернуть'} onClick={handleShowAll} area='Показать все отзывы'/>
+        <PrimaryButton title={isNotShowAll ? 'Показать все' : 'Свернуть'} onClick={handleShowAll} area='Показать все отзывы' id='pagination'/>
       )}
     </section>
   );

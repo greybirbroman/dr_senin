@@ -4,12 +4,13 @@ import styles from './About.module.css';
 import List from '../List/List';
 import { motion as m } from 'framer-motion';
 import { titleVarians } from '@/utils/motion';
+import { info } from '../../utils/info';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import Image from 'next/image';
 import Link from 'next/link';
-import { info } from '../../utils/info';
 
 const About = () => {
+  const freepikLink = 'https://ru.freepik.com/free-photo/top-view-over-career-guidance-items-for-dentists_27641893.htm#page=6&query=dental%20sergery&position=12&from_view=search&track=ais'
   return (
     <section className={styles.section} id='about'>
       <SectionTitle title='обо мне' />
@@ -19,6 +20,7 @@ const About = () => {
             variants={titleVarians}
             initial='hidden'
             whileInView='show'
+            id={section.id === 1 ? 'specialization' : 'education'}
             className={`${styles.sectionTitle} ${
               section.id === 1 ? styles.sectionTitleColor : ''
             }`}
@@ -27,7 +29,6 @@ const About = () => {
           </m.h3>
           <ul
             className={styles.list}
-            id={section.id === 1 ? 'specialization' : 'education'}
           >
             <li className={section.id === 1 ? styles.item : styles.flex}>
               {section.id === 1 && (
@@ -40,7 +41,7 @@ const About = () => {
                     className={styles.image}
                   />
                   <Link
-                    href='https://ru.freepik.com/free-photo/top-view-over-career-guidance-items-for-dentists_27641893.htm#page=6&query=dental%20sergery&position=12&from_view=search&track=ais'
+                    href={freepikLink}
                     className={styles.freepik}
                     target='_blank'
                   >

@@ -61,16 +61,15 @@
   padding-top: 50px;
 }
 
+.linksList {
+  display: flex;
+  flex-direction: column;
+  gap: 15.5px;
+}
+
 .listItem {
   display: flex;
   flex-direction: column;
-}
-
-.listItemRow {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding-bottom: 15.5px;
 }
 
 .listTitle {
@@ -85,6 +84,9 @@
 }
 
 .navLink {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   transition: all 0.35s;
 }
 

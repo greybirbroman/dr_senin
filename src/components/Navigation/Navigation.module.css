@@ -27,21 +27,23 @@
   transition: all 0.35s;
   padding: 10px 25px;
   width: 100%;
-  text-decoration: none;
 }
 
 .menuItem:hover {
   color: rgba(122, 156, 165, 1);
 }
 
+.menuLink {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
 .navItem {
-  /* background-color: rgba(122, 156, 165, 1); */
   padding: 16px 33px;
   color: rgba(85, 85, 85, 1);
   border-radius: 35px;
   font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 1.4;
   text-decoration: none;
 }
 
