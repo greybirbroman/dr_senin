@@ -1,5 +1,4 @@
-
-import SpecializationImage from '../public/specialization-image.jpg'
+import SpecializationImage from '../public/specialization-image.webp';
 
 export const info = [
   {
@@ -94,4 +93,4 @@ export const testimonials = [
     name: 'Павел Павелко',
     city: 'Санкт-Петербург',
   },
-]
+];

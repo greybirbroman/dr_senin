@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://senstom.ru/
+
+# Sitemaps
+Sitemap: https://senstom.ru/sitemap.xml
