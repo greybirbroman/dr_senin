@@ -3,7 +3,7 @@ import LinksBar from '../LinksBar/LinksBar';
 import Link from 'next/link';
 import Image from 'next/image';
 import PrimaryLink from '../PrimaryLink/PrimaryLink';
-import { contacts, footerLinks } from '@/utils/constants';
+import { contacts, footerLinks } from '../../utils/constants';
 
 const ContactItem = ({ icon, content, href }) => {
   return (

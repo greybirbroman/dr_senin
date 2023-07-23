@@ -1,6 +1,6 @@
 import styles from './List.module.css'
 import ListItem from '../ListItem/ListItem'
-import { info } from '@/utils/info'
+import { info } from '../../utils/info'
 
 const List = ({ section }) => {
   return (

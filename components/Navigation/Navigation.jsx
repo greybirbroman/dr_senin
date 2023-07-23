@@ -1,8 +1,7 @@
 'use client';
 import styles from './Navigation.module.css';
 import { useState, useRef, useEffect } from 'react';
-import { navTabs } from '@/utils/constants';
-import preventHashLink from '@/utils/functions';
+import { navTabs } from '../../utils/constants';
 import PrimaryLink from '../PrimaryLink/PrimaryLink';
 
 const MenuList = ({ onClick }) => {

@@ -1,6 +1,6 @@
 'use client'
 import styles from './PrimaryLink.module.css';
-import preventHashLink from '@/utils/functions';
+import preventHashLink from '../../utils/functions';
 
 const PrimaryLink = ({ customClass, title, href, position }) => {
 

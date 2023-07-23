@@ -1,11 +1,11 @@
 'use client';
 import styles from './HeroSection.module.css';
 import Image from 'next/image';
-import MainImage from '../../../public/images/senin-main.webp'
+import MainImage from '../../public/senin-main.webp'
 import LinksBar from '../LinksBar/LinksBar';
 import { motion as m } from 'framer-motion';
-import { photoVariants } from '@/utils/motion';
-import useIsMobileResolution from '@/utils/hooks/useIsMobileResolition';
+import { photoVariants } from '../../utils/motion';
+import useIsMobileResolution from '../../utils/hooks/useIsMobileResolition';
 
 const HeroSection = () => {
   const isMobileResolution = useIsMobileResolution(992);

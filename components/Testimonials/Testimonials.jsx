@@ -1,15 +1,15 @@
 'use client'
 import styles from './Testimonials.module.css';
 import { useState, useEffect } from 'react';
-import { testimonials } from '@/utils/info';
+import { testimonials } from '../../utils/info';
 import { motion as m } from 'framer-motion';
-import { listVariants } from '@/utils/motion';
+import { listVariants } from '../../utils/motion';
 import Image from 'next/image';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import PrimaryButton from '../PrimaryButton/PrimaryButton';
-import Quote from '../../../public/images/quote.svg';
-import Star from '../../../public/images/star.svg';
-import useIsMobileResolution from '@/utils/hooks/useIsMobileResolition.js';
+import Quote from '../../public/quote.svg';
+import Star from '../../public/star.svg';
+import useIsMobileResolution from '../../utils/hooks/useIsMobileResolition.js';
 
 const Testimonials = () => {
 const stars = Array(5).fill(null);

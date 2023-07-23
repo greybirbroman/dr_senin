@@ -1,5 +1,5 @@
 
-import SpecializationImage from '../../public/images/specialization-image.jpg'
+import SpecializationImage from '../public/specialization-image.jpg'
 
 export const info = [
   {

@@ -1,7 +1,7 @@
 import styles from './LinksBar.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import { authorContactsLinks } from '@/utils/constants';
+import { authorContactsLinks } from '../../utils/constants';
 
 const LinksBar = ({ white }) => {
 

@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './About.module.css';
 import List from '../List/List';
 import { motion as m } from 'framer-motion';
-import { titleVarians } from '@/utils/motion';
+import { titleVarians } from '../../utils/motion';
 import { info } from '../../utils/info';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import Image from 'next/image';

@@ -1,5 +1,5 @@
 import styles from './ListItem.module.css';
-import tooth from '../../../public/images/tooth.png';
+import tooth from '../../public/tooth.png';
 import Image from 'next/image'
 
 const ListItem = ({ text, span, year }) => {

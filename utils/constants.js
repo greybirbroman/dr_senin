@@ -1,11 +1,11 @@
-import Phone from '../../public/images/phone-icon.png';
-import PhoneWhite from '../../public/images/phone-white.png';
-import Mail from '../../public/images/gmail_logo.png';
-import MailWhite from '../../public/images/gmail-white.svg';
-import Telegram from '../../public/images/telegram_logo.png';
-import TelegramWhite from '../../public/images/telegram-white.svg';
-import MailIcon from '../../public/images/mail.svg';
-import PhoneIcon from '../../public/images/phone-icon.svg';
+import Phone from '../public/phone-icon.png';
+import PhoneWhite from '../public/phone-white.png';
+import Mail from '../public/gmail_logo.png';
+import MailWhite from '../public/gmail-white.svg';
+import Telegram from '../public/telegram_logo.png';
+import TelegramWhite from '../public/telegram-white.svg';
+import MailIcon from '../public/mail.svg';
+import PhoneIcon from '../public/phone-icon.svg';
 
 export const navTabs = [
   {

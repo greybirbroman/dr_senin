@@ -87,7 +87,7 @@
   .heroWrapper {
     flex: 1;
     align-items: center;
-    background: url(../../../public/images/senin-main.webp) no-repeat center;
+    background: url(../../public/senin-main.webp) no-repeat center;
     background-size: cover;
   }
 
