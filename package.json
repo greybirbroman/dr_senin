@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export && next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -13,6 +13,7 @@
     "eslint-config-next": "13.4.9",
     "framer-motion": "^10.12.21",
     "next": "13.4.9",
+    "next-sitemap": "^4.1.8",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   }

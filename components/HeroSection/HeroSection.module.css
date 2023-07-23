@@ -1,0 +1,120 @@
+.sectionWrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.heroWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex: 0.5;
+  color: rgba(20, 20, 20, 1);
+  background-color: rgba(235, 243, 245, 1);
+}
+
+.textContainer {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 2rem;
+  cursor: default;
+  z-index: 50;
+  text-align: center;
+}
+
+.imageContainer {
+  flex: 0.5;
+  background-color: #7a9ca5;
+  width: 50%;
+  height: 100vh;
+  position: relative;
+}
+
+.headText {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 115%;
+}
+
+.spanList {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  color: #5c8692;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  -webkit-box-shadow: -15px 15px 20px 0px rgba(30, 44, 48, 0.5);
+  -moz-box-shadow: -15px 15px 20px 0px rgba(30, 44, 48, 0.5);
+  box-shadow: -15px 15px 20px 0px rgba(30, 44, 48, 0.5);
+}
+
+.imageBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.motionContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .imageContainer {
+    display: none;
+  }
+
+  .heroWrapper {
+    flex: 1;
+    align-items: center;
+    background: url(../../public/senin-main.webp) no-repeat center;
+    background-size: cover;
+  }
+
+  .headText {
+    font-size: 52px;
+  }
+
+  .textContainer {
+    color: white;
+  }
+
+  .spanList {
+    color: white;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 700px) {
+  .headText {
+    font-size: 44px;
+  }
+
+  .heroWrapper {
+    justify-content: end;
+  }
+  .textContainer {
+    padding: 0 10px;
+    align-items: center;
+  }
+}
