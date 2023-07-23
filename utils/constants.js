@@ -59,7 +59,7 @@ export const footerLinks = [
 export const authorContactsLinks = [
   {
     id: 1,
-    linkHref: 'tel:+79219050533',
+    linkHref: 'tel:+79031686387',
     label: 'Позвонить по телефону',
     imgSrcWhite: PhoneWhite,
     imgSrcDefault: Phone,
