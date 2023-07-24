@@ -13,7 +13,7 @@ const About = () => {
   const freepikLink = 'https://ru.freepik.com/free-photo/top-view-over-career-guidance-items-for-dentists_27641893.htm#page=6&query=dental%20sergery&position=12&from_view=search&track=ais'
   return (
     <section className={styles.section} id='about'>
-      <SectionTitle title='обо мне' />
+      {/* <SectionTitle title='обо мне' /> */}
       {info.map((section) => (
        <React.Fragment key={section.id}>
           <m.h2

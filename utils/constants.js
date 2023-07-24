@@ -52,7 +52,7 @@ export const footerLinks = [
   {
     id: 2,
     href: '#about',
-    title: 'Обо мне',
+    title: 'Специализация',
   },
 ];
 
