@@ -18,7 +18,7 @@
   color: white;
   font-size: 14px;
   font-weight: 400;
-  line-height: 200%;
+  line-height: 100%;
   width: 100%;
 }
 
@@ -67,6 +67,10 @@
   gap: 15.5px;
 }
 
+.listItemRow {
+  list-style-type: none;
+}
+
 .listItem {
   display: flex;
   flex-direction: column;
@@ -74,7 +78,7 @@
 
 .listTitle {
   padding-bottom: 21px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 140%;
 }
@@ -88,10 +92,11 @@
   align-items: center;
   gap: 5px;
   transition: all 0.35s;
+  font-size: 18px;
 }
 
 .navLink:hover {
-  color: #5c8692
+  color: #5c8692;
 }
 @media (max-width: 1400px) {
   .contactsSection {
@@ -115,30 +120,30 @@
   .list {
     gap: 50px;
   }
+  .navLink {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 500px) {
-    .authorContainer {
-        line-height: 100%;
-    }
-    .contactsSection {
-        padding: 0 20px;
-        min-height: 0;
-    }
-    .container {
-        padding: 50px 0 20px;
-    }
+  .authorContainer {
+    line-height: 100%;
+  }
+  .contactsSection {
+    padding: 0 20px;
+    min-height: 0;
+  }
+  .container {
+    padding: 50px 0 20px;
+  }
 
-    .listTitle {
-        font-size: 18px;
-    }
-    .author {
-      font-size: 24px;
-    }
+  .listTitle {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 335px) {
-.authorContainer {
-  flex-direction: column;
-}
+  .authorContainer {
+    flex-direction: column;
+  }
 }

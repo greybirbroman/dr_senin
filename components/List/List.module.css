@@ -1,14 +1,14 @@
 .list {
     display: flex;
     flex-direction: column;
-    gap: 34px;
+    gap: 2rem;
     color: #141414;
     max-height: fit-content;
     position: relative;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1440px) {
     .list {
-        gap: 17px;
+        gap: 1rem;
     }
 }
