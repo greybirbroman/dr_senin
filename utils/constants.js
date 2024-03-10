@@ -7,6 +7,9 @@ import TelegramWhite from '../public/telegram-white.svg';
 import MailIcon from '../public/mail.svg';
 import PhoneIcon from '../public/phone-icon.svg';
 
+export const freepikLink =
+'https://ru.freepik.com/free-photo/top-view-over-career-guidance-items-for-dentists_27641893.htm#page=6&query=dental%20sergery&position=12&from_view=search&track=ais';
+
 export const navTabs = [
   {
     id: 1,
@@ -32,14 +35,26 @@ export const contacts = [
   {
     id: 1,
     icon: PhoneIcon,
+    alt: 'Иконка, изображение телефона',
     add: 'tel:',
-    content: '+7 903 168 6387',
+    content: '+7(903)168-63-87',
   },
   {
     id: 2,
     icon: MailIcon,
+    alt: 'Иконка, изображение почтового конверта',
     add: 'mailto:',
     content: 'skadentspb@mail.ru',
+  },
+];
+
+export const spanContact = [
+  {
+    id: 1,
+    icon: PhoneIcon,
+    alt: 'Иконка, изображение телефона',
+    add: 'tel:',
+    content: '+7(903)168-63-87',
   },
 ];
 

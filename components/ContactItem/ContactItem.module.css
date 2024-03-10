@@ -1,0 +1,21 @@
+.listItemRow {
+  list-style-type: none;
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.35s;
+    font-size: 18px;
+  }
+  
+  .navLink:hover {
+    color: #5c8692
+  }
+
+  @media (max-width: 992px) {
+    .navLink {
+      font-size: 16px;
+    }
+  }

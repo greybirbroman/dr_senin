@@ -1,20 +1,9 @@
 import styles from './Footer.module.css';
 import LinksBar from '../LinksBar/LinksBar';
 import Link from 'next/link';
-import Image from 'next/image';
+import ContactItem from '../ContactItem/ContactItem';
 import PrimaryLink from '../PrimaryLink/PrimaryLink';
 import { contacts, footerLinks } from '../../utils/constants';
-
-const ContactItem = ({ icon, content, href }) => {
-  return (
-    <li className={styles.listItemRow}>
-      <Link className={styles.navLink} href={href} target='_blank'>
-        <Image className={styles.contact} src={icon} alt='Иконка' />
-        {content}
-      </Link>
-    </li>
-  );
-};
 
 const NavigationItem = ({ href, title }) => {
   return (
@@ -42,6 +31,7 @@ const Footer = () => {
                 <ContactItem
                   key={contact.id}
                   icon={contact.icon}
+                  alt={contact.alt}
                   content={contact.content}
                   href={contact?.add + contact.content}
                 />

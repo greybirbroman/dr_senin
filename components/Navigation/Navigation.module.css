@@ -30,6 +30,7 @@
 }
 
 .menuItem:hover {
+  cursor: pointer;
   color: rgba(122, 156, 165, 1);
 }
 
@@ -40,7 +41,7 @@
 }
 
 .navItem {
-  padding: 16px 33px;
+  padding: 16px 20px;
   color: rgba(85, 85, 85, 1);
   border-radius: 35px;
   font-size: 18px;
@@ -48,8 +49,6 @@
 }
 
 .navItem:hover {
-  color: rgba(85, 85, 85, 1);
-  background-color: transparent;
   outline: 2px solid rgba(122, 156, 165, 1);
 }
 

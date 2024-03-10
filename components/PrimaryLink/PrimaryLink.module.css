@@ -1,7 +1,7 @@
 .link {
     bottom: 0;
     right: 0;
-    padding: 23px 36px;
+    padding: 23px 23px;
     background-color: #5C8692;
     color: white;
     text-transform: uppercase;
@@ -16,5 +16,5 @@
 .link:hover {
     outline:  2px solid #5C8692;
     background-color: transparent;
-    color: #141414;
+    color: rgba(85, 85, 85, 1);
 }
